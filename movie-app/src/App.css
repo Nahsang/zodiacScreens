@@ -1,0 +1,27 @@
+@keyframes gradientMove {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  .moving-background {
+    background: linear-gradient(120deg, #221752, #000000, #fdbb2d);
+    background-size: 200% 200%;
+    animation: gradientMove 10s ease infinite;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .movie-content {
+    position: relative;
+    z-index: 1; /* Ensures content stays above the background */
+    color: rgb(255, 255, 255); /* Adjust content color to stand out against the background */
+  }
+  
